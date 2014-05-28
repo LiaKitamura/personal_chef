@@ -1,3 +1,5 @@
+  #first set of instructions
+
   #create a personal chef class
   #make his name attribute accessible
   #make and initialize method that sets the name attribute
@@ -36,7 +38,7 @@ end
 #Lia.make_juice("cranberry")
 
 
-
+#now with more instructions
 
 #:hired by default, true
 #make a method called fire! which fires your current chef by switching their :hired attribute from
