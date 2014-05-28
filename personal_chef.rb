@@ -68,7 +68,10 @@ class PersonalChef
     if @hire == true && @busy == false
       puts "Your toast is #{toasted}"
     elsif @hire == true && @busy == true
+      puts "Your #{toasted} toast is being served"
           serve_toast
+        elsif @hire == false
+          puts "Your fired!"
     end
   end
 
@@ -76,8 +79,10 @@ class PersonalChef
     if @hire == true && @busy == false
       puts "You want #{flavor} juice"
     elsif @hire == true && @busy == true
-            serve_toast
-    else puts "Your fired!"
+      puts "Your #{flavor} juice is being served"
+            serve_juice
+    elsif @hire == false
+      puts "Your fired!"
     end
   end
 
@@ -85,8 +90,10 @@ class PersonalChef
     if @hire == true && @busy == false
       puts "You want #{quantity} eggs, cooked #{style}"
     elsif @hire == true && @busy == true
-      serve_toast
-    else puts "Your fired!"
+      puts "Your #{style} eggs are being served"
+      serve_eggs
+    elsif @hire == false
+       puts "Your fired!"
     end
   end
 
